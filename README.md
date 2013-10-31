@@ -6,6 +6,9 @@ Introduction
 This is a heavy assetic customized skeleton application.
 Includes most common things that I use, for a quicker start...
 
+Installation
+------------
+```php composer.phar create-project -sdev mpalourdio/mpa-zend-skeleton-heavy /path/to/project```
 
 Features
 --------
