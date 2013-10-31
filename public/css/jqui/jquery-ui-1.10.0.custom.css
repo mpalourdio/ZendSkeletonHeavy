@@ -1367,7 +1367,7 @@ input[type=file]:focus, input[type=checkbox]:focus, select:focus {
   outline: 1px dotted #666;
 }
 
-/*commenté par bduhr car override bs3*/
+/*commented by mpalourdio 'cause override bs3*/
 /*input[type="text"],
 input[type="password"],
 .ui-autocomplete-input,
