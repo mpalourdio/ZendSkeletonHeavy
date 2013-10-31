@@ -11,11 +11,13 @@ Features
 --------
 * Automatic APC caching in config files based on APC extension detection (doctrine, translators, config, modules map)
 * Includes ZDT only if ```setEnv APPLICATION_ENV development``` is set in apache
-* Boostrap 3.0.1
-* JQuery 2.0.3 / JQuery UI 1.10.3 + I18n translations
+* Boostrap 3.0.1 (minified)
+* JQuery  2.0.3 / JQuery UI 1.10.3 + I18n translations (minified)
 * Select2 3.4.4
 * Jquery UI boostrap https://github.com/addyosmani/jquery-ui-bootstrap
-* Font-Awesome
+* Font-Awesome 4
 * Animation.css
-* Included and pre-configured modules: 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools'
+* Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools'
+* cleaned layout.phtml and index.phtml
+* cleaned few code comments for more readability
 
