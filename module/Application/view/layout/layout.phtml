@@ -5,12 +5,13 @@
         <?php echo $this->headTitle('ZendSkeletonHeavy')->setSeparator(' - ')->setAutoEscape(false) ?>
         <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
 
-        <?php echo $this->appendStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+        <?php echo $this->headLink()->appendStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
                         ->appendStylesheet($this->basePath() . '/css/bootstrap.min.css')
                         ->appendStylesheet($this->basePath() . '/css/font-awesome.min.css')
-                        ->appendStylesheet($this->basePath() . '/css/animation.css')
+                        ->appendStylesheet($this->basePath() . '/css/animations.css')
                         ->appendStylesheet($this->basePath() . '/css/jqui/jquery-ui-1.10.0.custom.css')
                         ->appendStylesheet($this->basePath() . '/js/select2-3.4.4/select2.css')
+                        ->appendStylesheet($this->basePath() . '/css/styles.css')
         ?>
 
         <?php echo $this->headScript()

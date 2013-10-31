@@ -70,7 +70,7 @@ return array(
                 'pattern'  => '%s.mo',
             ),
         ),
-        'cache'                     => $apcCache,
+        'cache'                     => $translatorCache,
     ),
     'controllers'     => array(
         'invokables' => array(

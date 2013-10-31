@@ -1,0 +1,3 @@
+#zend-developer-toolbar { /* prevents a bug at hover with BS3*/
+    -moz-box-sizing: content-box;
+}
