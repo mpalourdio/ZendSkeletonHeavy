@@ -1,7 +1,7 @@
 {
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "name": "mpalourdio/MpaZendSkeletonHeavy",
+    "name": "mpalourdio/mpa-zend-skeleton-heavy",
     "description": "Customized Skeleton Application for ZF2",
     "license": "BSD-3-Clause",
     "keywords": [
