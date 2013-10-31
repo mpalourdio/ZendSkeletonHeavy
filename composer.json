@@ -1,6 +1,8 @@
 {
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
+    "description": "Customized Skeleton Application for ZF2",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
@@ -9,6 +11,11 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.2.*"
+        "zendframework/zendframework": "2.2.*",
+        "doctrine/doctrine-orm-module": "0.8.*@dev",
+        "doctrine/doctrine-module": "0.8.x-dev",
+        "zendframework/zend-developer-tools": "dev-master",
+        "mpalourdio/mpa-custom-doctrine-hydrator": "dev-master",
+        "mpalourdio/mpa-firephp-wrapper": "dev-master"
     }
 }
