@@ -1,26 +1,28 @@
+<?php
+$basePath = $this->basePath();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <?php echo $this->headTitle('ZendSkeletonHeavy')->setSeparator(' - ')->setAutoEscape(false) ?>
-        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+        <title>ZendSkeletonHeavy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="<?= $basePath ?>/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/css/animations.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/css/jqui/jquery-ui-1.10.0.custom.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/js/select2-3.4.4/select2.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/css/styles.css" media="screen" rel="stylesheet" type="text/css">
+        <?= $this->headLink(); ?>
 
-        <?php echo $this->headLink()->appendStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
-                        ->appendStylesheet($this->basePath() . '/css/bootstrap.min.css')
-                        ->appendStylesheet($this->basePath() . '/css/font-awesome.min.css')
-                        ->appendStylesheet($this->basePath() . '/css/animations.css')
-                        ->appendStylesheet($this->basePath() . '/css/jqui/jquery-ui-1.10.0.custom.css')
-                        ->appendStylesheet($this->basePath() . '/js/select2-3.4.4/select2.css')
-                        ->appendStylesheet($this->basePath() . '/css/styles.css')
-        ?>
+        <script type="text/javascript" src="<?= $basePath ?>/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/js/jquery-ui-i18n.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/js/select2-3.4.4/select2.js"></script>
+        <?= $this->headScript(); ?>
 
-        <?php echo $this->headScript()
-                        ->appendFile($this->basePath() . '/js/jquery-2.0.3.min.js')
-                        ->appendFile($this->basePath() . '/js/jquery-ui-1.10.3.custom.min.js')
-                        ->appendFile($this->basePath() . '/js/jquery-ui-i18n.js')
-                        ->appendFile($this->basePath() . '/js/bootstrap.min.js')
-                        ->appendFile($this->basePath() . '/js/select2-3.4.4/select2.js')
-        ?>
     </head>
     <body>
         <div class="container">
