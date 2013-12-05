@@ -71,7 +71,7 @@ return array(
              *
              * Expects: array
              */
-            'collectors' => array('db' => null),
+            'collectors' => array('db' => null, 'config' => null),
         ),
          /**
           * General Toolbar settings
