@@ -8,33 +8,33 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-return array(
-    'mpacustomdoctrinehydrator' => array(
-        'formats'  => array(
-            'fr-FR' => array(
-                'date_format'    => 'd/m/Y',
-                'time_format'    => 'H:i:s',
-            ),
-            'fr-CH' => array(
-                'date_format'    => 'd.m.Y',
-                'time_format'    => 'H:i:s',
-            ),
-            'de-CH' => array(
-                'date_format'    => 'd.m.Y',
-                'time_format'    => 'H:i:s',
-            ),
-            'de-DE' => array(
-                'date_format'    => 'd.m.Y',
-                'time_format'    => 'H:i:s',
-            ),
-            'en-US' => array(
-                'date_format'    => 'd.m.Y',
-                'time_format'    => 'H:i:s',
-            ),
-            'en-GB' => array(
-                'date_format'    => 'm/d/Y',
-                'time_format'    => 'H:i:s',
-            )
-        ),
-    ),
-);
+return [
+    'mpacustomdoctrinehydrator' => [
+        'formats' => [
+            'fr-FR' => [
+                'date_format' => 'd/m/Y',
+                'time_format' => 'H:i:s',
+            ],
+            'fr-CH' => [
+                'date_format' => 'd.m.Y',
+                'time_format' => 'H:i:s',
+            ],
+            'de-CH' => [
+                'date_format' => 'd.m.Y',
+                'time_format' => 'H:i:s',
+            ],
+            'de-DE' => [
+                'date_format' => 'd.m.Y',
+                'time_format' => 'H:i:s',
+            ],
+            'en-US' => [
+                'date_format' => 'd.m.Y',
+                'time_format' => 'H:i:s',
+            ],
+            'en-GB' => [
+                'date_format' => 'm/d/Y',
+                'time_format' => 'H:i:s',
+            ],
+        ],
+    ],
+];
