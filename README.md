@@ -25,6 +25,7 @@ Features
 * Font-Awesome 4
 * Animation.css
 * Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools'
-* cleaned layout.phtml and index.phtml
-* cleaned few code comments for more readability
+* Cleaned layout.phtml and index.phtml
+* Cleaned few code comments for more readability
+* Dropped zf2 autoloader support in favor of composer only.
 
