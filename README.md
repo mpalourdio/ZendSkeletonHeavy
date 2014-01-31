@@ -18,7 +18,7 @@ Features
 --------
 * Automatic APC caching in config files based on APC extension detection (doctrine, translators, config, modules map)
 * Includes ZDT only if ```setEnv APPLICATION_ENV development``` is set in apache
-* Boostrap 3.0.3 (minified)
+* Boostrap 3.1 (minified)
 * JQuery  2.0.3 / JQuery UI 1.10.3 + I18n translations (minified)
 * Select2 3.4.4
 * Jquery UI boostrap https://github.com/addyosmani/jquery-ui-bootstrap
