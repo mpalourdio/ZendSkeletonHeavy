@@ -15,19 +15,17 @@ $basePath = $this->basePath();
         <link href="<?= $basePath ?>/js/select2-3.4.4/select2.css" media="screen" rel="stylesheet" type="text/css">
         <link href="<?= $basePath ?>/css/styles.css" media="screen" rel="stylesheet" type="text/css">
         <?= $this->headLink(); ?>
-
+    </head>
+    <body>
+        <div class="container">
+            <?php echo $this->content; ?>
+        </div> <!-- /container -->
         <script type="text/javascript" src="<?= $basePath ?>/js/jquery-2.0.3.min.js"></script>
         <script type="text/javascript" src="<?= $basePath ?>/js/jquery-ui-1.10.3.custom.min.js"></script>
         <script type="text/javascript" src="<?= $basePath ?>/js/jquery-ui-i18n.min.js"></script>
         <script type="text/javascript" src="<?= $basePath ?>/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?= $basePath ?>/js/select2-3.4.4/select2.js"></script>
         <?= $this->headScript(); ?>
-
-    </head>
-    <body>
-        <div class="container">
-            <?php echo $this->content; ?>
-        </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
