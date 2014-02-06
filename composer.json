@@ -1,6 +1,4 @@
 {
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "name": "mpalourdio/mpa-zend-skeleton-heavy",
     "description": "Customized Skeleton Application for ZF2",
     "license": "BSD-3-Clause",
@@ -10,13 +8,12 @@
     ],
     "homepage": "http://framework.zend.com/",
     "require": {
-        "php": ">=5.4",
-        "zendframework/zendframework": "2.2.*",
-        "doctrine/doctrine-orm-module": "0.8.*@dev",
-        "doctrine/doctrine-module": "0.8.x-dev",
-        "zendframework/zend-developer-tools": "dev-master",
+        "php":                                     ">=5.4",
+        "zendframework/zendframework":             "2.2.*",
+        "doctrine/doctrine-orm-module":            "dev-master",
+        "zendframework/zend-developer-tools":      "dev-master",
         "mpalourdio/mpa-custom-doctrine-hydrator": "dev-master",
-        "mpalourdio/mpa-firephp-wrapper": "dev-master"
+        "mpalourdio/mpa-firephp-wrapper":          "dev-master"
     },
     "autoload": {
         "psr-0": {
