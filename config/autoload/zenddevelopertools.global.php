@@ -16,5 +16,10 @@ return [
             'version_check' => true,
             'entries'       => [],
         ],
+        'events'   => [
+            'enabled'     => true,
+            'collectors'  => [],
+            'identifiers' => []
+        ],
     ],
 ];
