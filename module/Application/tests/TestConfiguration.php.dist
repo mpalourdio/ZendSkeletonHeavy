@@ -1,0 +1,17 @@
+<?php
+return [
+    'modules' => [
+        'Application',
+        'DoctrineModule',
+        'DoctrineORMModule',
+        'MpaCustomDoctrineHydrator',
+    ],
+    'module_listener_options' => [
+        'config_glob_paths' => [
+            __DIR__ .'/../../../config/autoload/{,*.}{global,local}.php',
+        ],
+        'module_paths' => [
+            __DIR__ . '/../../../module',
+        ],
+    ],
+];
