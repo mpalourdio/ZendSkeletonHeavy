@@ -9,8 +9,7 @@ $allEnvModules = [
 $cacheconfig   = true;
 $cachemodule   = true;
 
-$isDev = getenv('APPLICATION_ENV') === 'development';
-if ($isDev) {
+if (IS_DEV) {
     $allEnvModules[] = 'ZendDeveloperTools';
     $cacheconfig     = false;
     $cachemodule     = false;
