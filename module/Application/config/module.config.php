@@ -1,15 +1,21 @@
 <?php
+use Application\Controller\IndexController;
+use Application\Controller\IndexControllerFactory;
+use Zend\Cache\Service\StorageCacheAbstractServiceFactory;
+use Zend\Log\LoggerAbstractServiceFactory;
+use Zend\Mvc\Router\Http\Literal;
+
 $translatorCache = extension_loaded('apc') ? ['adapter' => 'apc'] : null;
 
 return [
     'router'          => [
         'routes' => [
             'home'        => [
-                'type'    => 'Zend\Mvc\Router\Http\Literal',
+                'type'    => Literal::class,
                 'options' => [
                     'route'    => '/',
                     'defaults' => [
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => IndexController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -20,7 +26,7 @@ return [
                     'route'    => '/application',
                     'defaults' => [
                         '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Index',
+                        'controller'    => 'IndexController',
                         'action'        => 'index',
                     ],
                 ],
@@ -43,8 +49,8 @@ return [
     ],
     'service_manager' => [
         'abstract_factories' => [
-            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
-            'Zend\Log\LoggerAbstractServiceFactory',
+            StorageCacheAbstractServiceFactory::class,
+            LoggerAbstractServiceFactory::class,
         ],
         'aliases'            => [
             'translator' => 'MvcTranslator',
@@ -62,8 +68,8 @@ return [
         'cache'                     => $translatorCache,
     ],
     'controllers'     => [
-        'invokables' => [
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+        'factories' => [
+            IndexController::class => IndexControllerFactory::class
         ],
     ],
     'view_manager'    => [

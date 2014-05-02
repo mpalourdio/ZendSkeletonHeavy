@@ -8,7 +8,7 @@ Includes most common things that I use, for a quicker start...
 
 Requirements
 ------------
-PHP 5.4+
+PHP 5.5+
 
 Installation
 ------------
