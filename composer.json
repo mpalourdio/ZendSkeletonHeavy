@@ -15,8 +15,9 @@
         "zendframework/zendframework":             "2.3.*",
         "doctrine/doctrine-orm-module":            "dev-master",
         "zendframework/zend-developer-tools":      "dev-master",
-        "mpalourdio/mpa-custom-doctrine-hydrator": "dev-master",
-        "mpalourdio/mpa-firephp-wrapper":          "dev-master"
+        "mpalourdio/mpa-custom-doctrine-hydrator": "0.1.*",
+        "mpalourdio/mpa-firephp-wrapper":          "0.1.*",
+        "ocramius/ocra-cached-view-resolver":      "1.1.*"
     },
     "autoload":          {
         "psr-0": {

@@ -4,13 +4,14 @@ $allEnvModules = [
     'DoctrineModule',
     'DoctrineORMModule',
     'MpaCustomDoctrineHydrator',
-    'MpaFirephpWrapper',
+    'OcraCachedViewResolver',
 ];
 $cacheconfig   = true;
 $cachemodule   = true;
 
 if (IS_DEV) {
     $allEnvModules[] = 'ZendDeveloperTools';
+    $allEnvModules[] = 'MpaFirephpWrapper';
     $cacheconfig     = false;
     $cachemodule     = false;
 }
