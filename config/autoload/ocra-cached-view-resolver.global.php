@@ -9,7 +9,6 @@ if (IS_DEV) {
 
 return [
     'ocra_cached_view_resolver' => [
-        // configuration to be passed to `Zend\Cache\StorageFactory#factory()`
         'cache'                   => [
             'adapter' => [
                 'name'    => $adapterName,
@@ -19,8 +18,6 @@ return [
                 ],
             ],
         ],
-
-        // following is the key used to store the template map in the cache adapter
         'cached_template_map_key' => 'cached_template_map',
     ],
 ];
