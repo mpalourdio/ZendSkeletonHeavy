@@ -7,7 +7,7 @@ use Zend\View\Model\ViewModel;
 class IndexController extends AbstractActionController
 {
     /**
-     *
+     * Inject dependecies here !
      */
     public function __construct()
     {
