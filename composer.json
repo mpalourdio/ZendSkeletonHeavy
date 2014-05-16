@@ -3,11 +3,12 @@
     "prefer-stable":     true,
     "name":              "mpalourdio/mpa-zend-skeleton-heavy",
     "description":       "Customized Skeleton Application for ZF2",
-    "license":           "BSD-3-Clause",
+    "license":           "MIT",
     "keywords":          [
         "framework",
         "zf2",
-        "skeleton"
+        "skeleton",
+        "heavy"
     ],
     "homepage":          "http://framework.zend.com/",
     "require":           {
