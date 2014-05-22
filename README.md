@@ -22,7 +22,7 @@ Features
 * JQuery  2.0.3 / JQuery UI 1.10.4 + I18n translations (minified)
 * Select2 3.4.4
 * Jquery UI boostrap https://github.com/addyosmani/jquery-ui-bootstrap
-* Font-Awesome 4
+* Font-Awesome 4.1
 * Animation.css
 * Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools', 'OcraCachedViewResolver'
 * Cleaned layout.phtml and index.phtml
