@@ -1,8 +1,6 @@
 <?php
 use Application\Controller\IndexController;
 use Application\Controller\IndexControllerFactory;
-use Zend\Cache\Service\StorageCacheAbstractServiceFactory;
-use Zend\Log\LoggerAbstractServiceFactory;
 use Zend\Mvc\Router\Http\Literal;
 
 $translatorCache = extension_loaded('apc') ? ['adapter' => 'apc'] : null;
@@ -48,7 +46,7 @@ return [
         ],
     ],
     'service_manager' => [
-        'aliases'            => [
+        'aliases' => [
             'translator' => 'MvcTranslator',
         ],
     ],
@@ -87,7 +85,6 @@ return [
             'ViewJsonStrategy',
         ],
     ],
-    // Placeholder for console routes
     'console'         => [
         'router' => [
             'routes' => [],
