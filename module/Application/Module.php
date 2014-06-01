@@ -1,6 +1,7 @@
 <?php
 namespace Application;
 
+use Application\Listener\IntlListener;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
@@ -12,7 +13,10 @@ class Module implements ConfigProviderInterface
      */
     public function onBootstrap(MvcEvent $event)
     {
-        $eventManager        = $event->getApplication()->getEventManager();
+        $eventManager   = $event->getApplication()->getEventManager();
+        $serviceManager = $event->getApplication()->getServiceManager();
+
+        $eventManager->attachAggregate(new IntlListener($serviceManager->get('translator')));
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
     }
