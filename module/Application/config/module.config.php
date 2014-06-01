@@ -58,6 +58,18 @@ return [
                 'base_dir' => __DIR__ . '/../language',
                 'pattern'  => '%s.mo',
             ],
+            [
+                'type'        => 'phpArray',
+                'base_dir'    => __DIR__ . '/../../../vendor/zendframework/zendframework/resources/languages/',
+                'pattern'     => '%s/Zend_Validate.php',
+                'text_domain' => 'myApp',
+            ],
+            [
+                'type'        => 'phpArray',
+                'base_dir'    => __DIR__ . '/../../../vendor/mpalourdio/mpa-custom-doctrine-hydrator/resources/',
+                'pattern'     => '%s.php',
+                'text_domain' => 'myApp',
+            ],
         ],
         'cache'                     => $translatorCache,
     ],
