@@ -1,4 +1,5 @@
 <?php
+
 namespace Application\Listener;
 
 use Zend\EventManager\EventManagerInterface;
