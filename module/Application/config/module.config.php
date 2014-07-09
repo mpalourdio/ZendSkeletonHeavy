@@ -1,6 +1,8 @@
 <?php
 use Application\Controller\IndexController;
 use Application\Controller\IndexControllerFactory;
+use Application\Factory\IntlListenerFactory;
+use Application\Listener\IntlListener;
 use Zend\Mvc\Router\Http\Literal;
 
 $translatorCache = extension_loaded('apc') ? ['adapter' => 'apc'] : null;
@@ -46,9 +48,12 @@ return [
         ],
     ],
     'service_manager' => [
-        'aliases' => [
+        'aliases'   => [
             'translator' => 'MvcTranslator',
         ],
+        'factories' => [
+            IntlListener::class => IntlListenerFactory::class,
+        ]
     ],
     'translator'      => [
         'locale'                    => 'en_US',

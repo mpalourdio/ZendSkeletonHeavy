@@ -1,4 +1,5 @@
 <?php
+
 namespace Application;
 
 use Application\Listener\IntlListener;
@@ -16,7 +17,7 @@ class Module implements ConfigProviderInterface
         $eventManager   = $event->getApplication()->getEventManager();
         $serviceManager = $event->getApplication()->getServiceManager();
 
-        $eventManager->attachAggregate(new IntlListener($serviceManager->get('translator')));
+        $eventManager->attachAggregate($serviceManager->get(IntlListener::class));
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
     }
