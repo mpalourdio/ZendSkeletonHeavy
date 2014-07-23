@@ -52,7 +52,7 @@ return [
                 'class' => AnnotationDriver::class,
                 'cache' => $cache,
                 'paths' => [
-                    __DIR__ . '/../../module/Application/src/Application/Entity',
+                    __DIR__ . '/../../module/Application/src/Entity',
                 ],
             ],
             'orm_default'          => [
