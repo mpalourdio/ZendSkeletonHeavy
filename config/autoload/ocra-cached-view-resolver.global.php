@@ -1,4 +1,7 @@
 <?php
+
+use OcraCachedViewResolver\Module;
+
 if (IS_DEV) {
     $adapterName = 'memory';
 } elseif (IS_STG) {
@@ -8,8 +11,8 @@ if (IS_DEV) {
 }
 
 return [
-    'ocra_cached_view_resolver' => [
-        'cache'                   => [
+    Module::CONFIG => [
+        'cache'                      => [
             'adapter' => [
                 'name'    => $adapterName,
                 'options' => [
@@ -18,6 +21,7 @@ return [
                 ],
             ],
         ],
-        'cached_template_map_key' => 'cached_template_map',
+        Module::CONFIG_CACHE_KEY     => 'cached_template_map',
+        Module::CONFIG_CACHE_SERVICE => 'OcraCachedViewResolver\\Cache\\ResolverCache',
     ],
 ];
