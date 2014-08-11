@@ -16,7 +16,7 @@ return [
             'adapter' => [
                 'name'    => $adapterName,
                 'options' => [
-                    'ttl'       => 84600,
+                    'ttl'       => 86400,
                     'namespace' => 'app_view_resolver_' . sha1(realpath(__FILE__)),
                 ],
             ],
