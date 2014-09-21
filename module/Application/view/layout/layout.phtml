@@ -7,27 +7,26 @@ $basePath = $this->basePath();
         <meta charset="utf-8">
         <title>ZendSkeletonHeavy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="<?= $basePath ?>/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="<?= $basePath ?>/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="<?= $basePath ?>/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="<?= $basePath ?>/css/animations.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/vendor/bootstrap-css/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/vendor/bootstrap-css/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/vendor/font-awesome-css/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/vendor/animate-css/animate.min.css" media="screen" rel="stylesheet" type="text/css">
         <link href="<?= $basePath ?>/css/jqui/jquery-ui-1.10.3.custom.css" media="screen" rel="stylesheet" type="text/css">
         <link href="<?= $basePath ?>/css/jqui/jquery-ui-1.10.3.theme.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="<?= $basePath ?>/js/select2-3.4.4/select2.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="<?= $basePath ?>/css/bootstrap-select2.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/vendor/select2/select2.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="<?= $basePath ?>/vendor/select2-bootstrap3-css/select2-bootstrap.css" media="screen" rel="stylesheet" type="text/css">
         <link href="<?= $basePath ?>/css/styles.css" media="screen" rel="stylesheet" type="text/css">
         <?= $this->headLink(); ?>
     </head>
     <body>
         <div class="container">
-            <?php echo $this->content; ?>
+            <?= $this->content; ?>
         </div> <!-- /container -->
-        <script type="text/javascript" src="<?= $basePath ?>/js/jquery-2.0.3.min.js"></script>
-        <script type="text/javascript" src="<?= $basePath ?>/js/jquery-ui-1.10.4.custom.min.js"></script>
-        <script type="text/javascript" src="<?= $basePath ?>/js/jquery-ui-i18n.min.js"></script>
-        <script type="text/javascript" src="<?= $basePath ?>/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<?= $basePath ?>/js/select2-3.4.4/select2.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/vendor/jquery-ui/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/vendor/bootstrap-css/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?= $basePath ?>/vendor/select2/select2.min.js"></script>
         <?= $this->headScript(); ?>
-        <?php echo $this->inlineScript() ?>
+        <?= $this->inlineScript(); ?>
     </body>
 </html>

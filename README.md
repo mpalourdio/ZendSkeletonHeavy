@@ -4,11 +4,14 @@ ZendSkeletonHeavy
 Introduction
 ------------
 This is a heavy assetic customized skeleton application.
-Includes most common things that I use, for a quicker start...
+Includes most common things that I use, for a quicker start.
+It uses Bower to grab assets in public/vendor.
+
+The assets installation is triggered for each composer install/update
 
 Requirements
 ------------
-PHP 5.5+
+PHP 5.5+ / Bower
 
 Installation
 ------------
@@ -18,12 +21,12 @@ Features
 --------
 * Automatic APC caching in config files based on APC extension detection (doctrine, translators, config, modules map)
 * Includes ZDT only if ```setEnv APPLICATION_ENV development``` is set in apache
-* Boostrap 3.2.0 (minified)
-* JQuery  2.0.3 / JQuery UI 1.10.4 + I18n translations (minified)
-* Select2 3.4.4
+* Boostrap 3.x
+* JQuery  2.x / JQuery UI
+* Select2 3.x
 * Jquery UI boostrap https://github.com/addyosmani/jquery-ui-bootstrap
-* Font-Awesome 4.2.0 (minified)
-* Animation.css
+* Font-Awesome 4.x
+* Animate.css
 * Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools', 'OcraCachedViewResolver'
 * Cleaned layout.phtml and index.phtml
 * Cleaned few code comments for more readability

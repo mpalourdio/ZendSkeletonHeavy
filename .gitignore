@@ -8,6 +8,7 @@ nbproject
 .settings
 composer.lock
 vendor
+public/vendor
 phpunit.xml
 phpmd.xml
 phpdox.xml

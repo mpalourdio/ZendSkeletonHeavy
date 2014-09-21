@@ -20,6 +20,14 @@
         "mpalourdio/mpa-firephp-wrapper":          "0.*",
         "ocramius/ocra-cached-view-resolver":      "3.0.*"
     },
+    "scripts": {
+        "post-install-cmd": [
+            "bower install"
+        ],
+        "post-update-cmd": [
+            "bower install"
+        ]
+    },
     "autoload":          {
         "psr-4": {
             "Application\\":     "module/Application/src",
