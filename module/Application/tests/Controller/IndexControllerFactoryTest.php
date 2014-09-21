@@ -1,6 +1,6 @@
 <?php
 
-namespace ApplicationTest\Factory;
+namespace ApplicationTest\Controller;
 
 use Application\Controller\IndexController;
 use Application\Controller\IndexControllerFactory;
