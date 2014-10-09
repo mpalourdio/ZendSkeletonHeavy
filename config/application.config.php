@@ -5,6 +5,7 @@ $allEnvModules = [
     'DoctrineORMModule',
     'MpaCustomDoctrineHydrator',
     'OcraCachedViewResolver',
+    'ZfTwitterWidget'
 ];
 $cacheconfig   = true;
 $cachemodule   = true;
