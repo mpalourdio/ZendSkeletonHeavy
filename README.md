@@ -24,7 +24,7 @@ Features
 * Boostrap 3.x
 * JQuery  2.x / JQuery UI
 * Select2 3.x
-* Jquery UI boostrap https://github.com/addyosmani/jquery-ui-bootstrap
+* Jquery UI bootstrap https://github.com/addyosmani/jquery-ui-bootstrap
 * Font-Awesome 4.x
 * Animate.css
 * Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools', 'OcraCachedViewResolver', 'zf2-twitter-widget'
