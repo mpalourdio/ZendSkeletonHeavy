@@ -19,7 +19,7 @@
         "mpalourdio/mpa-custom-doctrine-hydrator": "0.*",
         "mpalourdio/mpa-firephp-wrapper":          "0.*",
         "ocramius/ocra-cached-view-resolver":      "3.0.*",
-        "mpalourdio/zf2-twitter-widget":           "0.*"
+        "mpalourdio/zf2-twitter-widget":           "~0.1"
     },
     "scripts":           {
         "post-install-cmd": [
