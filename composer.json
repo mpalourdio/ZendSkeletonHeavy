@@ -1,27 +1,25 @@
 {
-    "minimum-stability": "dev",
-    "prefer-stable":     true,
-    "name":              "mpalourdio/mpa-zend-skeleton-heavy",
-    "description":       "Customized Skeleton Application for ZF2",
-    "license":           "MIT",
-    "keywords":          [
+    "name":        "mpalourdio/mpa-zend-skeleton-heavy",
+    "description": "Customized Skeleton Application for ZF2",
+    "license":     "MIT",
+    "keywords":    [
         "framework",
         "zf2",
         "skeleton",
         "heavy"
     ],
-    "homepage":          "http://framework.zend.com/",
-    "require":           {
+    "homepage":    "http://framework.zend.com/",
+    "require":     {
         "php":                                     ">=5.5",
         "zendframework/zendframework":             "~2.3",
-        "doctrine/doctrine-orm-module":            "dev-master",
+        "doctrine/doctrine-orm-module":            "~0.9",
         "zendframework/zend-developer-tools":      "dev-master",
         "mpalourdio/mpa-custom-doctrine-hydrator": "~0.1",
         "mpalourdio/mpa-firephp-wrapper":          "~0.1",
         "ocramius/ocra-cached-view-resolver":      "~3.0",
         "mpalourdio/zf2-twitter-widget":           "~0.1"
     },
-    "scripts":           {
+    "scripts":     {
         "post-install-cmd": [
             "bower install"
         ],
@@ -29,7 +27,7 @@
             "bower update"
         ]
     },
-    "autoload":          {
+    "autoload":    {
         "psr-4": {
             "Application\\":     "module/Application/src",
             "ApplicationTest\\": "module/Application/tests"
