@@ -65,7 +65,7 @@ return [
             ],
             [
                 'type'        => 'phpArray',
-                'base_dir'    => __DIR__ . '/../../../vendor/zendframework/zendframework/resources/languages/',
+                'base_dir'    => __DIR__ . '/../../../vendor/zendframework/zend-i18n-resources/languages/',
                 'pattern'     => '%s/Zend_Validate.php',
                 'text_domain' => 'myApp',
             ],
