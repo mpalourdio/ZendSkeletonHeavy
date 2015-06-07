@@ -4,6 +4,7 @@ use Application\Controller\IndexControllerFactory;
 use Application\Factory\IntlListenerFactory;
 use Application\Listener\IntlListener;
 use Zend\Mvc\Router\Http\Literal;
+use Application\Delegator\TranslatorDelegator;
 
 $translatorCache = extension_loaded('apc') ? ['adapter' => 'apc'] : null;
 
@@ -48,27 +49,21 @@ return [
         ],
     ],
     'service_manager' => [
-        'aliases'   => [
+        'aliases'    => [
             'translator' => 'MvcTranslator',
         ],
-        'factories' => [
+        'delegators' => [
+            'MvcTranslator' => [
+                TranslatorDelegator::class,
+            ],
+        ],
+        'factories'  => [
             IntlListener::class => IntlListenerFactory::class,
-        ]
+        ],
     ],
     'translator'      => [
         'locale'                    => 'en_US',
         'translation_file_patterns' => [
-            [
-                'type'     => 'gettext',
-                'base_dir' => __DIR__ . '/../language',
-                'pattern'  => '%s.mo',
-            ],
-            [
-                'type'        => 'phpArray',
-                'base_dir'    => __DIR__ . '/../../../vendor/zendframework/zend-i18n-resources/languages/',
-                'pattern'     => '%s/Zend_Validate.php',
-                'text_domain' => 'myApp',
-            ],
             [
                 'type'        => 'phpArray',
                 'base_dir'    => __DIR__ . '/../../../vendor/mpalourdio/mpa-custom-doctrine-hydrator/resources/',
@@ -80,7 +75,7 @@ return [
     ],
     'controllers'     => [
         'factories' => [
-            IndexController::class => IndexControllerFactory::class
+            IndexController::class => IndexControllerFactory::class,
         ],
     ],
     'view_manager'    => [
