@@ -11,7 +11,7 @@
     "homepage":    "http://framework.zend.com/",
     "require":     {
         "php":                                     ">=5.5",
-        "zendframework/zendframework":             "~2.3",
+        "zendframework/zendframework":             "~2.5",
         "doctrine/doctrine-orm-module":            "~0.9",
         "zendframework/zend-developer-tools":      "dev-master",
         "mpalourdio/mpa-custom-doctrine-hydrator": "~0.1",
