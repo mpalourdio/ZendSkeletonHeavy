@@ -19,6 +19,10 @@
         "ocramius/ocra-cached-view-resolver":      "~3.0",
         "mpalourdio/zf2-twitter-widget":           "~0.1"
     },
+    "require-dev": {
+        "phpunit/phpunit":           "~4.4",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
     "scripts":     {
         "post-install-cmd": [
             "bower install"
