@@ -27,7 +27,7 @@ Features
 * Jquery UI bootstrap https://github.com/addyosmani/jquery-ui-bootstrap
 * Font-Awesome 4.x
 * Animate.css
-* Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools', 'OcraCachedViewResolver', 'zf2-twitter-widget'
+* Included and pre-configured modules (see autoload folder): 'DoctrineModule', 'DoctrineORMModule', 'MpaCustomDoctrineHydrator', 'MpaFirephpWrapper', 'ZendDeveloperTools', 'OcraCachedViewResolver', 'zf2-twitter-widget', 'zf2-maintenance-mode'
 * Cleaned layout.phtml and index.phtml
 * Cleaned few code comments for more readability
 * Dropped zf2 autoloader support in favor of composer only.
