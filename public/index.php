@@ -3,7 +3,7 @@ define('IS_PRD', getenv('APPLICATION_ENV') == 'production');
 define('IS_STG', getenv('APPLICATION_ENV') == 'staging');
 define('IS_DEV', !(IS_STG || IS_PRD));
 /**
- * Fallback to dev if non prd and non tst. Useful for unit tests
+ * Fallback to dev if non prd and non stg. Useful for unit tests
  * and if SetEnv is not (correctly) set on localhost apache.
  *
  * /!\ Those constants are only meant to be used in config files.
