@@ -14,8 +14,9 @@ $cachemodule   = true;
 if (IS_DEV) {
     $allEnvModules[] = 'ZendDeveloperTools';
     $allEnvModules[] = 'MpaFirephpWrapper';
-    $cacheconfig     = false;
-    $cachemodule     = false;
+    $allEnvModules[] = 'OcraServiceManager';
+    $cacheconfig = false;
+    $cachemodule = false;
 }
 
 return [
