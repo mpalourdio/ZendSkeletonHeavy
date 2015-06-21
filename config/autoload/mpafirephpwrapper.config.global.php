@@ -14,6 +14,6 @@ return [
         'maxArrayDepth'       => 3,
         'maxDepth'            => 3,
         'useNativeJsonEncode' => true,
-        'includeLineNumbers'  => true
+        'includeLineNumbers'  => true,
     ],
 ];

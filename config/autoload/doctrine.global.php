@@ -37,15 +37,15 @@ return [
                     'dbname'           => $dbname,
                     'charset'          => 'utf8',
                     'generate_proxies' => $generateProxies,
-                ]
-            ]
+                ],
+            ],
         ],
         'configuration' => [
             'orm_default' => [
                 'metadata_cache' => $cache,
                 'query_cache'    => $cache,
                 'result_cache'   => $cache,
-            ]
+            ],
         ],
         'driver'        => [
             'application_entities' => [
@@ -58,8 +58,8 @@ return [
             'orm_default'          => [
                 'drivers' => [
                     'Application\Entity' => 'application_entities',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 ];

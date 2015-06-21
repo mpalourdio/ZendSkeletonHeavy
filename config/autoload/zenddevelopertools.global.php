@@ -19,7 +19,7 @@ return [
         'events'   => [
             'enabled'     => true,
             'collectors'  => [],
-            'identifiers' => []
+            'identifiers' => [],
         ],
     ],
 ];
