@@ -11,7 +11,7 @@ The assets installation is triggered for each composer install/update
 
 Requirements
 ------------
-PHP 5.5+ / Bower
+PHP 5.6+ / Bower
 
 Installation
 ------------
