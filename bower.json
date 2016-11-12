@@ -1,12 +1,12 @@
 {
-    "name": "Customized Skeleton Application for ZF2",
+    "name": "customized-skeleton-application-for-zf2",
     "dependencies": {
-        "jquery": "components/jquery",
-        "jquery-ui": "*",
-        "bootstrap-css": "*",
-        "font-awesome-css": "*",
-        "animate-css": "*",
-        "select2": "*",
-        "select2-bootstrap3-css": "*"
+        "jquery": "2.1.4",
+        "jquery-ui": "1.12.1",
+        "bootstrap-css": "3.3.6",
+        "font-awesome": "4.5.0",
+        "animate.css": "3.5.0",
+        "select2": "3.5.4",
+        "select2-bootstrap3-css": "1.4.6"
     }
 }
