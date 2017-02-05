@@ -11,21 +11,21 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": "^7.0",
-        "zendframework/zendframework": "~2.5",
-        "doctrine/doctrine-orm-module": "~1.1",
-        "ocramius/ocra-cached-view-resolver": "~3.0",
-        "mpalourdio/mpa-custom-doctrine-hydrator": "~0.5",
-        "mpalourdio/zf2-twitter-widget": "~0.1",
-        "mpalourdio/zf2-maintenance-mode": "~0.2",
-        "ocramius/proxy-manager": "~0.5"
+        "zendframework/zendframework": "^2.5",
+        "doctrine/doctrine-orm-module": "^1.1",
+        "ocramius/ocra-cached-view-resolver": "^3.0",
+        "mpalourdio/mpa-custom-doctrine-hydrator": "^0.5",
+        "mpalourdio/zf2-twitter-widget": "^0.1",
+        "mpalourdio/zf2-maintenance-mode": "^0.2",
+        "ocramius/proxy-manager": "^0.5"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.0",
-        "mpalourdio/mpa-firephp-wrapper": "~0.1",
-        "phpunit/phpunit": "~5.6",
-        "mockery/mockery": "~0.9",
-        "squizlabs/php_codesniffer": "~2.7",
-        "ocramius/ocra-service-manager": "~2.0"
+        "mpalourdio/mpa-firephp-wrapper": "^0.3",
+        "phpunit/phpunit": "^5.7",
+        "mockery/mockery": "^0.9",
+        "squizlabs/php_codesniffer": "^2.7",
+        "ocramius/ocra-service-manager": "^2.0"
     },
     "scripts": {
         "post-install-cmd": [
